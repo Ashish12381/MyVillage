@@ -1,0 +1,159 @@
+<html>
+    <head>
+       <style>
+           #header {
+               background-color: brown;
+               height: 10%;
+               display: flex;
+               
+           }
+          
+           #main {
+               background-color: burlywood;
+               height: 85%;
+               display: flex;
+           }
+           #nav {
+               background-color:darkslategrey;
+               flex-grow: 4;
+
+           }
+           #content{
+               background-color: floralwhite;
+               flex-grow: 11;
+
+           }
+           .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:chartreuse;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown{
+    
+    background-color: forestgreen;text-align: center;font-family: cursive; margin-top:1%; margin-left: 20%;margin-bottom:1%;margin-right:20%;font-size: x-large;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block
+}
+           #table{
+            border-collapse: collapse;width:50%;margin:5 5 5 5;
+            flex-grow: 6;
+            width: 100%;
+           }
+           #images{
+               flex-grow: 6;
+               margin: 5px;
+  border: 1px dotted coral;
+  padding-top: 20px;
+  margin-top: 5%;
+  width: 100%;
+  
+           }
+           #images:hover {
+  border: 1px solid #777;
+           }
+           #footer {
+               background-color: brown;
+               height: 5%;
+               text-align: center;
+               padding: 5px;
+           }
+           #p1:nth-child(even) {background-color: #f2f2f2;}
+           #p1,td{
+            text-align: center;
+           }
+           #p1:hover {background-color: #2da347;}
+          
+       </style>
+    </head>
+    <body style="background-color: peru; margin: 0%;">
+        <div id="header">
+         <div style="flex-grow: 0.06;background-color:brown">
+            <img style="width: 100%; height: 100%;" src="./Premier League.png"></div>
+         <div style="flex-grow: 10; text-align: center;"><h1>English Premier League</h1></div>
+         <div style="flex-grow: 1;background-color: gray;">
+            <img style="width: 100%;height: 100%; margin: 0%;float: right;" src="./download (1).jfif">
+              </div>
+        </div>
+        <div id="main">
+            <div id="nav">
+               <ul>
+                   <li>home</li>
+                   <li>about</li>
+                   <li>contact</li>
+                   <li>feedback</li>
+               </ul>
+            </div>
+            <div id="content">
+               <table id="table">
+                   <div class="dropdown">
+                <span> Premier League Points Table</span>
+                <div class="dropdown-content">
+                    <p>Football</p>
+                </div>
+                    <tr style="background-color: cadetblue;margin-left: auto;margin-right: auto;text-align: center;" >
+                        <td>Club</td>
+                        <td>Matches Played</td>
+                        <td>Won</td>
+                        <td>Draw</td>
+                        <td>Loss</td>
+                        <td>Points</td>
+                    </tr>
+                    <tr id="p1">
+                        <td>Man City</td>
+                        <td>22</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>50</td>
+
+                    </tr>
+                    <tr id="p1">
+                        <td>Man Utd</td>
+                        <td>23</td>
+                        <td>13</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>45</td>
+                    </tr>
+                    <tr id="p1">
+                        <td>Leiceester city</td>
+                        <td>23</td>
+                        <td>13</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>43</td>
+                    </tr>
+                    <tr id="p1">
+                        <td>Liverpool</td>
+                        <td>23</td>
+                        <td>11</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>40</td>
+                    </tr>
+                   
+                </table>
+             <div id="images">
+            <img src="./Manchester City.png" width="20%">
+            
+            <img src="./Manchester United.png" width="20%" >
+            <img src="./Leicester City.png" width="20%">
+            <img src="./Liverpool.png" width="20%">
+        </div>
+
+        </div>
+        </div>
+    </div>
+        <div id="footer">
+            <span>apal74180@gmail.com  9260900828 Ballarpur Maharashtra</span>
+
+       </div>
+            </div>
+    </body>
+</html>
